@@ -9,7 +9,12 @@ body {
   height: 100%;
 }
 
-.container h1 {
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.container > h1 {
   text-align:center;
   text-transform: uppercase;
   font-family: sans-serif;
@@ -18,159 +23,56 @@ body {
   margin-bottom: 1em;
 }
 
-.preview-baku {
-    background: #fff url(/images/baku.jpg) no-repeat top center;
-    background-size: cover;
-    margin-bottom: 1em;
-    height: 300px;
-
+.preview {
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 1em;
+  height: 300px;
 }
 
-.preview-baku h1 {
+.preview h1 {
   text-align: left;
   font-family: serif;
   font-size: 1.75em;
   padding: 10% 5%;
 }
-
-.preview-london {
-    background: #fff url(/images/london.png) no-repeat top center;
-    background-size: cover;
-    margin-bottom: 1em;
-    height: 300px;
-}
-
-.preview-london h1 {
-  text-align: left;
-  font-family: serif;
-  font-size: 1.75em;
-  padding: 10% 5%;
+.baku {
+    background-image:url(/images/baku.jpg);
 
 }
-  .preview-madrid {
-      background: #fff url(/images/madrid.jpg) no-repeat top center;
-      background-size: cover;
-      margin-bottom: 1em;
-      height: 300px;
+
+
+.london {
+    background-image:url(/images/london.png);
+}
+
+  .madrid {
+      background-image :url(/images/madrid.jpg);
   }
 
-  .preview-madrid h1 {
-    text-align: left;
-    font-family: serif;
-    font-size: 1.75em;
-    padding: 10% 5%;
+.rome {
+    background-image: url(/images/rome.jpg);
+
 }
 
-.preview-rome {
-    background: #fff url(/images/rome.jpg) no-repeat top center;
-    background-size: cover;
-    margin-bottom: 1em;
-    height: 300px;
-}
-
-.preview-rome h1 {
-  text-align: left;
-  font-family: serif;
-  font-size: 1.75em;
-  padding: 10% 5%;
-}
 
 @media screen and (min-width: 575px){
 
-  .preview-baku {
-      background: #fff url(/images/baku.jpg) no-repeat top center;
-      background-size: cover;
-      height: 300px;
-      display: block;
-      float: left;
+  .preview {
       width: 48%;
-      margin-left: .5em;
-      margin-right: .5em;
-
-  }
-  .preview-london {
-      background: #fff url(/images/london.png) no-repeat top center;
-      background-size: cover;
-      height: 300px;
-      display: block;
+      margin: 0 1% 1em 1%;
       float: left;
-      width:48%;
-      margin-left: .5em;
-      margin-right: .5em;
 
   }
-  .preview-madrid {
-      background: #fff url(/images/madrid.jpg) no-repeat top center;
-      background-size: cover;
-      margin-bottom: 1em;
-      height: 300px;
-      display: block;
-      float: left;
-      width: 48%;
-      margin-left: .5em;
-      margin-right: .5em;
-  }
-  .preview-rome {
-      background: #fff url(/images/rome.jpg) no-repeat top center;
-      background-size: cover;
-      margin-bottom: 1em;
-      height: 300px;
-      display: block;
-      float: left;
-      width: 48%;
-      margin-left: .5em;
-      margin-right: .5em;
-  }
 
-
-  }
+}
 
   @media screen and (min-width: 991px){
 
-    .preview-baku {
-        background: #fff url(/images/baku.jpg) no-repeat top center;
-        background-size: cover;
-        height: 300px;
-        display: block;
-        float: left;
+    .preview {
         width: 23%;
-        margin-left: .5em;
-        margin-right: .5em;
 
     }
-    .preview-london {
-        background: #fff url(/images/london.png) no-repeat top center;
-        background-size: cover;
-        height: 300px;
-        display: block;
-        float: left;
-        width:23%;
-        margin-left: .5em;
-        margin-right: .5em;
-
-    }
-    .preview-madrid {
-        background: #fff url(/images/madrid.jpg) no-repeat top center;
-        background-size: cover;
-        margin-bottom: 1em;
-        height: 300px;
-        display: block;
-        float: left;
-        width: 23%;
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-    .preview-rome {
-        background: #fff url(/images/rome.jpg) no-repeat top center;
-        background-size: cover;
-        margin-bottom: 1em;
-        height: 300px;
-        display: block;
-        float: left;
-        width: 23%;
-        margin-left: .5em;
-        margin-right: .5em;
-    }
-
 
     }
